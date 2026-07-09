@@ -7,21 +7,60 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: var(--thoughts-bg);
+        }
+        .back-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 2rem;
+        }
+        .content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        .list {
+            list-style: none;
+        }
+        .list li {
+            margin-bottom: 1rem;
+        }
+        .list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color var(--transition-fast);
+        }
+        .list a:hover {
+            border-bottom-color: var(--text-primary);
+        }
+    </style>
 </head>
 <body>
     <main class="container">
         <header class="header">
             <h1 class="header-title"><a href="../" class="back-link">← </a>Thoughts</h1>
-            <p class="header-subtitle">A collection of notes, essays, and reflections.</p>
+            <p class="header-subtitle">Notes, essays, and reflections.</p>
         </header>
         
         <div class="content">
-            <p>Placeholder: This is where your thoughts will live. Add Markdown files or HTML pages here.</p>
+            <p>This is where my written thoughts live. Some are polished, some are raw. All are intentional.</p>
             <ul class="list">
-                <li><a href="#">First thought</a></li>
-                <li><a href="#">Second thought</a></li>
-                <li><a href="#">Third thought</a></li>
+                <li><a href="#">On simplicity in design</a></li>
+                <li><a href="#">Why I build things</a></li>
+                <li><a href="#">The value of constraints</a></li>
+                <li><a href="#">A year of learning</a></li>
             </ul>
         </div>
     </main>

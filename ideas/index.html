@@ -7,7 +7,45 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: var(--ideas-bg);
+        }
+        .back-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 2rem;
+        }
+        .content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        .list {
+            list-style: none;
+        }
+        .list li {
+            margin-bottom: 1rem;
+        }
+        .list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color var(--transition-fast);
+        }
+        .list a:hover {
+            border-bottom-color: var(--text-primary);
+        }
+    </style>
 </head>
 <body>
     <main class="container">
@@ -17,11 +55,12 @@
         </header>
         
         <div class="content">
-            <p>Placeholder: This is where your ideas will live.</p>
+            <p>Unfinished thoughts, half-baked ideas, and things I'm exploring.</p>
             <ul class="list">
-                <li><a href="#">Idea One</a></li>
-                <li><a href="#">Idea Two</a></li>
-                <li><a href="#">Idea Three</a></li>
+                <li><a href="#">The future of personal websites</a></li>
+                <li><a href="#">Building with constraints</a></li>
+                <li><a href="#">Color theory for developers</a></li>
+                <li><a href="#">Depth in digital design</a></li>
             </ul>
         </div>
     </main>

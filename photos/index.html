@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: var(--photos-bg);
+        }
+        .back-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 2rem;
+        }
+        .content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .gallery-item {
+            aspect-ratio: 1 / 1;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+    </style>
 </head>
 <body>
     <main class="container">
@@ -17,8 +54,15 @@
         </header>
         
         <div class="content">
-            <p>Placeholder: This is where your photos will live.</p>
-            <p>Add images to this folder and reference them here.</p>
+            <p>Photos I've taken or collected. More to come.</p>
+            <div class="gallery">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
         </div>
     </main>
 </body>
