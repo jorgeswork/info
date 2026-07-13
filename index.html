@@ -1,141 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-primary: #f8f5f2;
-            --bg-secondary: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #555555;
-            --thoughts-bg: #e8f0ff;
-            --projects-bg: #e8f5e8;
-            --ideas-bg: #fff8e8;
-            --photos-bg: #f0e8ff;
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
-            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --radius-lg: 24px;
-            --transition-normal: 0.25s ease;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: var(--font-family);
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.5;
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .header { margin-bottom: 3rem; max-width: 600px; }
-        .header-title {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            color: var(--text-primary);
-            letter-spacing: -0.02em;
-        }
-        .header-subtitle {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            font-weight: 400;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        .card {
-            display: block;
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all var(--transition-normal);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
-        }
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
-            transition: background var(--transition-normal);
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-        .card:hover::before {
-            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.15), transparent);
-        }
-        .card-thoughts { background: var(--thoughts-bg); }
-        .card-projects { background: var(--projects-bg); }
-        .card-ideas { background: var(--ideas-bg); }
-        .card-photos { background: var(--photos-bg); }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-        .card-description {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            display: block;
-        }
-        @media (max-width: 768px) {
-            .container { padding: 2rem 1.5rem; }
-            .header-title { font-size: 2.25rem; }
-            .header-subtitle { font-size: 1.1rem; }
-            .grid { gap: 1.5rem; }
-            .card { padding: 2rem; }
-        }
-        @media (max-width: 480px) {
-            .grid { grid-template-columns: 1fr; }
-            .header-title { font-size: 2rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jorge</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body>
-    <main class="container">
-        <header class="header">
-            <h1 class="header-title">Jorge</h1>
-            <p class="header-subtitle">A place for thoughts, projects, ideas, and photos.</p>
+<body class="bg">
+  <div class="wrap">
+    <header class="header">
+      <nav class="nav">
+        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
+        <span class="nav-right">
+          <a href="/about/" class="nav-link">About</a>
+          <a href="/tags/" class="nav-link">Tags</a>
+        </span>
+      </nav>
+    </header>
+    <main class="main-content">
+      <article class="post-item">
+        <header class="post-item-header">
+          <h2 class="post-item-title"><a href="/#on-simplicity-in-design" class="plain">On simplicity in design</a></h2>
+          <div class="post-item-meta"><time datetime="2025-07-13">July 13, 2025</time><span class="reading-time">3 minute read</span></div>
+          <div class="post-tags"><a href="/tags/#thoughts" class="tag">#thoughts</a><a href="/tags/#design" class="tag">#design</a></div>
         </header>
-        <div class="grid">
-            <a href="thoughts" class="card card-thoughts">
-                <span class="card-title">Thoughts</span>
-                <span class="card-description">Notes, essays, and reflections</span>
-            </a>
-            <a href="projects" class="card card-projects">
-                <span class="card-title">Projects</span>
-                <span class="card-description">Things I've built or contributed to</span>
-            </a>
-            <a href="ideas" class="card card-ideas">
-                <span class="card-title">Ideas</span>
-                <span class="card-description">Fragments, experiments, works in progress</span>
-            </a>
-            <a href="photos" class="card card-photos">
-                <span class="card-title">Photos</span>
-                <span class="card-description">A visual collection</span>
-            </a>
-        </div>
+        <div class="post-item-excerpt"><p>Simplicity is not the absence of complexity, but the careful organization of it.</p><p><a href="/#on-simplicity-in-design" class="plain">Keep reading &rarr;</a></p></div>
+      </article>
+      <ul class="post-list">
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#why-i-build-things" class="plain">Why I build things</a></h2><div class="post-item-meta"><time datetime="2025-07-12">July 12, 2025</time><span class="reading-time">4 minute read</span></div><div class="post-tags"><a href="/tags/#thoughts" class="tag">#thoughts</a><a href="/tags/#philosophy" class="tag">#philosophy</a></div></header><div class="post-item-excerpt"><p>I build things to understand them.</p><p><a href="/#why-i-build-things" class="plain">Keep reading &rarr;</a></p></div></li>
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#the-minimalist-framework" class="plain">The Minimalist Framework</a></h2><div class="post-item-meta"><time datetime="2025-07-11">July 11, 2025</time><span class="reading-time">5 minute read</span></div><div class="post-tags"><a href="/tags/#projects" class="tag">#projects</a><a href="/tags/#code" class="tag">#code</a></div></header><div class="post-item-excerpt"><p>A framework for building digital products.</p><p><a href="/#the-minimalist-framework" class="plain">Keep reading &rarr;</a></p></div></li>
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#digital-garden-toolkit" class="plain">Digital Garden Toolkit</a></h2><div class="post-item-meta"><time datetime="2025-07-10">July 10, 2025</time><span class="reading-time">6 minute read</span></div><div class="post-tags"><a href="/tags/#projects" class="tag">#projects</a><a href="/tags/#tools" class="tag">#tools</a></div></header><div class="post-item-excerpt"><p>A toolkit for digital gardens.</p><p><a href="/#digital-garden-toolkit" class="plain">Keep reading &rarr;</a></p></div></li>
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#the-value-of-constraints" class="plain">The value of constraints</a></h2><div class="post-item-meta"><time datetime="2025-07-09">July 09, 2025</time><span class="reading-time">2 minute read</span></div><div class="post-tags"><a href="/tags/#ideas" class="tag">#ideas</a><a href="/tags/#creativity" class="tag">#creativity</a></div></header><div class="post-item-excerpt"><p>Constraints as creative fuel.</p><p><a href="/#the-value-of-constraints" class="plain">Keep reading &rarr;</a></p></div></li>
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#character-builder" class="plain">Character Builder</a></h2><div class="post-item-meta"><time datetime="2025-07-08">July 08, 2025</time><span class="reading-time">3 minute read</span></div><div class="post-tags"><a href="/tags/#projects" class="tag">#projects</a><a href="/tags/#experiments" class="tag">#experiments</a></div></header><div class="post-item-excerpt"><p>Random character generator.</p><p><a href="/#character-builder" class="plain">Keep reading &rarr;</a></p></div></li>
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#the-future-of-personal-websites" class="plain">The future of personal websites</a></h2><div class="post-item-meta"><time datetime="2025-07-07">July 07, 2025</time><span class="reading-time">5 minute read</span></div><div class="post-tags"><a href="/tags/#ideas" class="tag">#ideas</a><a href="/tags/#web" class="tag">#web</a></div></header><div class="post-item-excerpt"><p>Where personal sites are heading.</p><p><a href="/#the-future-of-personal-websites" class="plain">Keep reading &rarr;</a></p></div></li>
+        <li class="post-item"><header class="post-item-header"><h2 class="post-item-title"><a href="/#building-with-constraints" class="plain">Building with constraints</a></h2><div class="post-item-meta"><time datetime="2025-07-06">July 06, 2025</time><span class="reading-time">4 minute read</span></div><div class="post-tags"><a href="/tags/#ideas" class="tag">#ideas</a><a href="/tags/#development" class="tag">#development</a></div></header><div class="post-item-excerpt"><p>Limiting tools intentionally.</p><p><a href="/#building-with-constraints" class="plain">Keep reading &rarr;</a></p></div></li>
+      </ul>
+      <section class="tags-section"><h2 class="tags-header"><a href="/tags/" class="plain">Tags</a></h2><p class="tags-description muted">Explore by category</p><ul class="tags-grid"><li><a href="/tags/#thoughts" class="tag-button">thoughts <span class="tag-count">2</span></a></li><li><a href="/tags/#projects" class="tag-button">projects <span class="tag-count">3</span></a></li><li><a href="/tags/#ideas" class="tag-button">ideas <span class="tag-count">3</span></a></li><li><a href="/tags/#photos" class="tag-button">photos <span class="tag-count">0</span></a></li></ul></section>
     </main>
+  </div>
 </body>
 </html>

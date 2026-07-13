@@ -1,77 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoughts | Jorge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-primary: #e8f0ff;
-            --bg-secondary: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #555555;
-            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --radius-lg: 24px;
-            --transition-fast: 0.15s ease;
-            --transition-normal: 0.25s ease;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: var(--font-family);
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.5;
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .header { margin-bottom: 3rem; max-width: 600px; }
-        .header-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.75rem; }
-        .header-title a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .header-title a:hover { text-decoration: underline; }
-        .header-subtitle { font-size: 1.25rem; color: var(--text-secondary); }
-        .content { margin-top: 2rem; }
-        .content p { margin-bottom: 1.5rem; color: var(--text-secondary); }
-        .list { list-style: none; }
-        .list li { margin-bottom: 1rem; }
-        .list a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-block;
-            padding: 0.25rem 0;
-            border-bottom: 2px solid transparent;
-            transition: border-color var(--transition-fast);
-        }
-        .list a:hover { border-bottom-color: var(--text-primary); }
-        @media (max-width: 768px) {
-            .container { padding: 2rem 1.5rem; }
-            .header-title { font-size: 2.25rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thoughts | Jorge</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-    <main class="container">
-        <header class="header">
-            <h1 class="header-title"><a href="../">← </a>Thoughts</h1>
-            <p class="header-subtitle">Notes, essays, and reflections.</p>
-        </header>
-        <div class="content">
-            <p>This is where my written thoughts live. Some are polished, some are raw. All are intentional.</p>
-            <ul class="list">
-                <li><a href="#">On simplicity in design</a></li>
-                <li><a href="#">Why I build things</a></li>
-                <li><a href="#">The value of constraints</a></li>
-                <li><a href="#">A year of learning</a></li>
-            </ul>
-        </div>
+<body class="bg">
+  <div class="wrap">
+    <header class="header">
+      <nav class="nav">
+        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
+        <span class="nav-right">
+          <a href="/about/" class="nav-link">About</a>
+          <a href="/tags/" class="nav-link">Tags</a>
+        </span>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h1 class="page-title">Thoughts</h1>
+      <p class="muted">Notes, essays, and reflections</p>
+      <p class="mt-xl"><a href="/" class="back-link">&larr; Back</a></p>
     </main>
+  </div>
 </body>
 </html>
