@@ -5,23 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thoughts | Jorge</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body class="bg">
+<body>
   <div class="wrap">
-    <header class="header">
+    <header class="site-header">
+      <a href="/" class="site-name">Jorge</a>
       <nav class="nav">
-        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
-        <span class="nav-right">
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/tags/" class="nav-link">Tags</a>
-        </span>
+        <a href="/about/">About</a>
+        <a href="/now/">Now</a>
+        <a href="/tags/">Tags</a>
       </nav>
     </header>
-    <main class="main-content">
-      <h1 class="page-title">Thoughts</h1>
-      <p class="muted">Notes, essays, and reflections</p>
-      <p class="mt-xl"><a href="/" class="back-link">&larr; Back</a></p>
+
+    <main>
+      <a href="/" class="back-link">Home</a>
+      <h1>Thoughts</h1>
+      <p class="muted">Essays and reflections — things I've turned over long enough to write down.</p>
+
+      <ul class="note-list">
+        <li>
+          <a href="#" class="note-title">On simplicity in design</a>
+          <p class="note-excerpt">Simplicity is not the absence of complexity, but the careful organization of it.</p>
+          <div class="note-meta">
+            <time datetime="2025-07-13">Jul 13, 2025</time>
+            <a href="/tags/#thoughts" class="tag">#thoughts</a>
+            <a href="/tags/#design" class="tag">#design</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="note-title">Why I build things</a>
+          <p class="note-excerpt">I build things to understand them.</p>
+          <div class="note-meta">
+            <time datetime="2025-07-12">Jul 12, 2025</time>
+            <a href="/tags/#thoughts" class="tag">#thoughts</a>
+            <a href="/tags/#philosophy" class="tag">#philosophy</a>
+          </div>
+        </li>
+      </ul>
     </main>
+
+    <footer class="site-footer">
+      <span>By Jorge</span>
+      <span><a href="/">Home</a></span>
+    </footer>
   </div>
 </body>
 </html>

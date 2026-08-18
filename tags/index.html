@@ -5,28 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tags | Jorge</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body class="bg">
+<body>
   <div class="wrap">
-    <header class="header">
+    <header class="site-header">
+      <a href="/" class="site-name">Jorge</a>
       <nav class="nav">
-        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
-        <span class="nav-right">
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/tags/" class="nav-link">Tags</a>
-        </span>
+        <a href="/about/">About</a>
+        <a href="/now/">Now</a>
+        <a href="/tags/" class="active">Tags</a>
       </nav>
     </header>
-    <main class="main-content">
-      <h1 class="page-title">Tags</h1>
-      <p class="muted">All posts grouped by tag</p>
-      <ul class="tags-grid">
-        <li><a href="#thoughts" class="tag-button">thoughts <span class="tag-count">2</span></a></li>
-        <li><a href="#projects" class="tag-button">projects <span class="tag-count">3</span></a></li>
-        <li><a href="#ideas" class="tag-button">ideas <span class="tag-count">3</span></a></li>
-        <li><a href="#photos" class="tag-button">photos <span class="tag-count">0</span></a></li>
+
+    <main>
+      <a href="/" class="back-link">Home</a>
+      <h1>Tags</h1>
+      <p class="muted">Browse notes by topic.</p>
+
+      <ul class="tag-grid">
+        <li><a href="#thoughts" class="tag-chip">thoughts <span class="count">2</span></a></li>
+        <li><a href="#projects" class="tag-chip">projects <span class="count">3</span></a></li>
+        <li><a href="#ideas" class="tag-chip">ideas <span class="count">3</span></a></li>
+        <li><a href="#design" class="tag-chip">design <span class="count">1</span></a></li>
+        <li><a href="#philosophy" class="tag-chip">philosophy <span class="count">1</span></a></li>
+        <li><a href="#code" class="tag-chip">code <span class="count">1</span></a></li>
+        <li><a href="#tools" class="tag-chip">tools <span class="count">1</span></a></li>
+        <li><a href="#experiments" class="tag-chip">experiments <span class="count">1</span></a></li>
+        <li><a href="#creativity" class="tag-chip">creativity <span class="count">1</span></a></li>
+        <li><a href="#web" class="tag-chip">web <span class="count">1</span></a></li>
+        <li><a href="#development" class="tag-chip">development <span class="count">1</span></a></li>
+        <li><a href="#photos" class="tag-chip">photos <span class="count">0</span></a></li>
       </ul>
     </main>
+
+    <footer class="site-footer">
+      <span>By Jorge</span>
+      <span><a href="/">Home</a></span>
+    </footer>
   </div>
 </body>
 </html>
