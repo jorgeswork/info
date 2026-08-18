@@ -5,24 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Jorge</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body class="bg">
+<body>
   <div class="wrap">
-    <header class="header">
+    <header class="site-header">
+      <a href="/" class="site-name">Jorge</a>
       <nav class="nav">
-        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
-        <span class="nav-right">
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/tags/" class="nav-link">Tags</a>
-        </span>
+        <a href="/about/" class="active">About</a>
+        <a href="/now/">Now</a>
+        <a href="/tags/">Tags</a>
       </nav>
     </header>
-    <main class="main-content">
-      <h1 class="page-title">About</h1>
-      <p>This is where I write about what I'm thinking, building, and exploring.</p>
-      <p>I believe in building things that matter, writing to think, and sharing work in progress.</p>
-      <p>This site is a collection of thoughts, projects, ideas, and photos.</p>
+
+    <main>
+      <a href="/" class="back-link">Home</a>
+      <h1>About</h1>
+
+      <div class="prose">
+        <p>I'm Jorge. I write to think, build to understand, and share work in progress.</p>
+        <p>This site is a collection of <a href="/thoughts/">thoughts</a>, <a href="/projects/">projects</a>, <a href="/ideas/">ideas</a>, and <a href="/photos/">photos</a> — a digital garden, not a feed. Notes grow and change over time.</p>
+        <h2>How this site is made</h2>
+        <p>Plain HTML and CSS, no frameworks, no trackers. Hosted on GitHub Pages. Built to be simple, elegant, and functional — like I'd want everything to be.</p>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <span>By Jorge</span>
+      <span><a href="/">Home</a></span>
+    </footer>
   </div>
 </body>
 </html>

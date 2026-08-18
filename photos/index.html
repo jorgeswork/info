@@ -5,23 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photos | Jorge</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body class="bg">
+<body>
   <div class="wrap">
-    <header class="header">
+    <header class="site-header">
+      <a href="/" class="site-name">Jorge</a>
       <nav class="nav">
-        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
-        <span class="nav-right">
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/tags/" class="nav-link">Tags</a>
-        </span>
+        <a href="/about/">About</a>
+        <a href="/now/">Now</a>
+        <a href="/tags/">Tags</a>
       </nav>
     </header>
-    <main class="main-content">
-      <h1 class="page-title">Photos</h1>
-      <p class="muted">A visual collection</p>
-      <p class="mt-xl"><a href="/" class="back-link">&larr; Back</a></p>
+
+    <main>
+      <a href="/" class="back-link">Home</a>
+      <h1>Photos</h1>
+      <p class="muted">A visual field notebook.</p>
+
+      <p class="empty">No photos yet — check back soon.</p>
     </main>
+
+    <footer class="site-footer">
+      <span>By Jorge</span>
+      <span><a href="/">Home</a></span>
+    </footer>
   </div>
 </body>
 </html>

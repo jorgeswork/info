@@ -5,23 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Now | Jorge</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body class="bg">
+<body>
   <div class="wrap">
-    <header class="header">
+    <header class="site-header">
+      <a href="/" class="site-name">Jorge</a>
       <nav class="nav">
-        <span class="nav-left"><a href="/" class="site-name">Jorge</a></span>
-        <span class="nav-right">
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/tags/" class="nav-link">Tags</a>
-        </span>
+        <a href="/about/">About</a>
+        <a href="/now/" class="active">Now</a>
+        <a href="/tags/">Tags</a>
       </nav>
     </header>
-    <main class="main-content">
-      <h1 class="page-title">Now</h1>
-      <p><em>July 2025</em></p>
-      <p>Working on personal projects. Reading about design. Thinking about publishing.</p>
+
+    <main>
+      <a href="/" class="back-link">Home</a>
+      <h1>Now</h1>
+      <p class="muted"><time datetime="2025-07">July 2025</time></p>
+
+      <div class="prose">
+        <p>Working on personal projects. Reading about design. Thinking about publishing.</p>
+        <p>This page follows the <a href="https://nownownow.com/" rel="noopener">/now</a> convention — a snapshot of what I'm focused on right now.</p>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <span>By Jorge</span>
+      <span><a href="/">Home</a></span>
+    </footer>
   </div>
 </body>
 </html>
