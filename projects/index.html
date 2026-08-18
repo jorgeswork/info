@@ -1,63 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Jorge</title>
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script src="/scripts.js" defer></script>
 </head>
 <body>
-  <div class="wrap">
-    <header class="site-header">
-      <a href="/" class="site-name">Jorge</a>
-      <nav class="nav">
-        <a href="/about/">About</a>
-        <a href="/now/">Now</a>
-        <a href="/tags/">Tags</a>
-      </nav>
-    </header>
+  <div class="workspace">
 
-    <main>
-      <a href="/" class="back-link">Home</a>
-      <h1>Projects</h1>
-      <p class="muted">Things I've built or am building — code, tools, and experiments.</p>
+    <aside class="site-body-left-column">
+      <div class="site-body-left-column-site-name"><a href="/">Jorge's Garden</a></div>
+      <div class="nav-files-container">
+        <div class="tree-item is-collapsed">
+          <div class="tree-item-self has-children">
+            <span class="tree-item-collapse-indicator">▾</span>
+            <span class="tree-item-inner">📁 Thoughts</span>
+            <span class="tree-item-flair">2</span>
+          </div>
+          <div class="tree-item-children">
+            <a href="/thoughts/" class="tree-item-self"><span class="tree-item-inner">On simplicity in design</span></a>
+            <a href="/thoughts/" class="tree-item-self"><span class="tree-item-inner">Why I build things</span></a>
+          </div>
+        </div>
+        <div class="tree-item">
+          <div class="tree-item-self has-children">
+            <span class="tree-item-collapse-indicator">▾</span>
+            <span class="tree-item-inner">📁 Projects</span>
+            <span class="tree-item-flair">3</span>
+          </div>
+          <div class="tree-item-children">
+            <a href="/projects/" class="tree-item-self is-active"><span class="tree-item-inner">The Minimalist Framework</span></a>
+            <a href="/projects/" class="tree-item-self"><span class="tree-item-inner">Digital Garden Toolkit</span></a>
+            <a href="/projects/" class="tree-item-self"><span class="tree-item-inner">Character Builder</span></a>
+          </div>
+        </div>
+        <div class="tree-item is-collapsed">
+          <div class="tree-item-self has-children">
+            <span class="tree-item-collapse-indicator">▾</span>
+            <span class="tree-item-inner">📁 Ideas</span>
+            <span class="tree-item-flair">3</span>
+          </div>
+          <div class="tree-item-children">
+            <a href="/ideas/" class="tree-item-self"><span class="tree-item-inner">The value of constraints</span></a>
+            <a href="/ideas/" class="tree-item-self"><span class="tree-item-inner">The future of personal websites</span></a>
+            <a href="/ideas/" class="tree-item-self"><span class="tree-item-inner">Building with constraints</span></a>
+          </div>
+        </div>
+        <a href="/photos/" class="tree-item-self"><span class="tree-item-inner">📷 Photos</span><span class="tree-item-flair">0</span></a>
+        <a href="/about/" class="tree-item-self"><span class="tree-item-inner">About</span></a>
+        <a href="/now/" class="tree-item-self"><span class="tree-item-inner">Now</span></a>
+        <a href="/tags/" class="tree-item-self"><span class="tree-item-inner"># Tags</span></a>
+      </div>
+    </aside>
 
-      <ul class="note-list">
-        <li>
-          <a href="#" class="note-title">The Minimalist Framework</a>
-          <p class="note-excerpt">A framework for building digital products with the fewest moving parts.</p>
-          <div class="note-meta">
-            <time datetime="2025-07-11">Jul 11, 2025</time>
-            <a href="/tags/#projects" class="tag">#projects</a>
-            <a href="/tags/#code" class="tag">#code</a>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="note-title">Digital Garden Toolkit</a>
-          <p class="note-excerpt">A toolkit for growing and publishing digital gardens.</p>
-          <div class="note-meta">
-            <time datetime="2025-07-10">Jul 10, 2025</time>
-            <a href="/tags/#projects" class="tag">#projects</a>
-            <a href="/tags/#tools" class="tag">#tools</a>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="note-title">Character Builder</a>
-          <p class="note-excerpt">A random character generator, built as a small experiment.</p>
-          <div class="note-meta">
-            <time datetime="2025-07-08">Jul 08, 2025</time>
-            <a href="/tags/#projects" class="tag">#projects</a>
-            <a href="/tags/#experiments" class="tag">#experiments</a>
-          </div>
-        </li>
-      </ul>
-    </main>
+    <div class="site-body-center-column">
+      <div class="published-container">
+        <div class="page-header">
+          <a href="/" class="page-header-link">← Home</a>
+          <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
 
-    <footer class="site-footer">
-      <span>By Jorge</span>
-      <span><a href="/">Home</a></span>
-    </footer>
+        <div class="markdown-preview-view">
+          <div class="markdown-preview-sizer">
+            <h1>Projects</h1>
+            <p>Things I've built or am building — code, tools, and experiments.</p>
+
+            <ul class="note-list">
+              <li>
+                <a href="#" class="note-title internal-link">The Minimalist Framework</a>
+                <p class="note-excerpt">A framework for building digital products with the fewest moving parts.</p>
+                <div class="note-meta">
+                  <time datetime="2025-07-11">Jul 11, 2025</time>
+                  <a href="/tags/#projects" class="tag">#projects</a>
+                  <a href="/tags/#code" class="tag">#code</a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="note-title internal-link">Digital Garden Toolkit</a>
+                <p class="note-excerpt">A toolkit for growing and publishing digital gardens.</p>
+                <div class="note-meta">
+                  <time datetime="2025-07-10">Jul 10, 2025</time>
+                  <a href="/tags/#projects" class="tag">#projects</a>
+                  <a href="/tags/#tools" class="tag">#tools</a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="note-title internal-link">Character Builder</a>
+                <p class="note-excerpt">A random character generator, built as a small experiment.</p>
+                <div class="note-meta">
+                  <time datetime="2025-07-08">Jul 08, 2025</time>
+                  <a href="/tags/#projects" class="tag">#projects</a>
+                  <a href="/tags/#experiments" class="tag">#experiments</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="backlinks">
+              <div class="published-section-header">Links to this page</div>
+              <ul class="backlink-list">
+                <li><a href="/" class="internal-link">Home</a></li>
+              </ul>
+            </div>
+
+            <footer class="site-footer">Powered by curiosity, hosted on GitHub Pages.</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="site-body-right-column">
+      <div class="published-section-header">Graph view</div>
+      <div class="graph-view-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+          <line x1="100" y1="50" x2="100" y2="100" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="100" y1="50" x2="60" y2="130" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="100" y1="50" x2="100" y2="140" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="100" y1="50" x2="140" y2="130" stroke="var(--text-faint)" stroke-width="1"/>
+          <circle cx="100" cy="50" r="6" fill="var(--interactive-accent)"/>
+          <circle cx="100" cy="100" r="4" fill="var(--text-accent)"/>
+          <circle cx="60" cy="130" r="4" fill="var(--text-accent)"/>
+          <circle cx="100" cy="140" r="4" fill="var(--text-accent)"/>
+          <circle cx="140" cy="130" r="4" fill="var(--text-accent)"/>
+        </svg>
+      </div>
+      <div class="published-section-header">On this page</div>
+      <div class="outline">
+        <a href="#" class="tree-item-self"><span class="tree-item-inner">Projects</span></a>
+      </div>
+    </aside>
+
   </div>
 </body>
 </html>

@@ -1,66 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jorge</title>
-  <meta name="description" content="Jorge's personal site — thoughts, projects, ideas, and photos.">
+  <meta name="description" content="Jorge's digital garden — thoughts, projects, ideas, and photos.">
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script src="/scripts.js" defer></script>
 </head>
 <body>
-  <div class="wrap">
-    <header class="site-header">
-      <a href="/" class="site-name">Jorge</a>
-      <nav class="nav">
-        <a href="/about/">About</a>
-        <a href="/now/">Now</a>
-        <a href="/tags/">Tags</a>
-      </nav>
-    </header>
+  <div class="workspace">
 
-    <main>
-      <h1>A garden, not a feed.</h1>
-      <p class="hub-intro">Notes I'm growing in public — half-formed, evergreen, and occasionally useful. Wander where you like.</p>
+    <!-- Left sidebar: file explorer -->
+    <aside class="site-body-left-column">
+      <div class="site-body-left-column-site-name"><a href="/">Jorge's Garden</a></div>
+      <div class="nav-files-container">
+        <div class="tree-item is-collapsed">
+          <div class="tree-item-self has-children">
+            <span class="tree-item-collapse-indicator">▾</span>
+            <span class="tree-item-inner">📁 Thoughts</span>
+            <span class="tree-item-flair">2</span>
+          </div>
+          <div class="tree-item-children">
+            <a href="/thoughts/" class="tree-item-self"><span class="tree-item-inner">On simplicity in design</span></a>
+            <a href="/thoughts/" class="tree-item-self"><span class="tree-item-inner">Why I build things</span></a>
+          </div>
+        </div>
+        <div class="tree-item is-collapsed">
+          <div class="tree-item-self has-children">
+            <span class="tree-item-collapse-indicator">▾</span>
+            <span class="tree-item-inner">📁 Projects</span>
+            <span class="tree-item-flair">3</span>
+          </div>
+          <div class="tree-item-children">
+            <a href="/projects/" class="tree-item-self"><span class="tree-item-inner">The Minimalist Framework</span></a>
+            <a href="/projects/" class="tree-item-self"><span class="tree-item-inner">Digital Garden Toolkit</span></a>
+            <a href="/projects/" class="tree-item-self"><span class="tree-item-inner">Character Builder</span></a>
+          </div>
+        </div>
+        <div class="tree-item is-collapsed">
+          <div class="tree-item-self has-children">
+            <span class="tree-item-collapse-indicator">▾</span>
+            <span class="tree-item-inner">📁 Ideas</span>
+            <span class="tree-item-flair">3</span>
+          </div>
+          <div class="tree-item-children">
+            <a href="/ideas/" class="tree-item-self"><span class="tree-item-inner">The value of constraints</span></a>
+            <a href="/ideas/" class="tree-item-self"><span class="tree-item-inner">The future of personal websites</span></a>
+            <a href="/ideas/" class="tree-item-self"><span class="tree-item-inner">Building with constraints</span></a>
+          </div>
+        </div>
+        <a href="/photos/" class="tree-item-self"><span class="tree-item-inner">📷 Photos</span><span class="tree-item-flair">0</span></a>
+        <a href="/about/" class="tree-item-self"><span class="tree-item-inner">About</span></a>
+        <a href="/now/" class="tree-item-self"><span class="tree-item-inner">Now</span></a>
+        <a href="/tags/" class="tree-item-self"><span class="tree-item-inner"># Tags</span></a>
+      </div>
+    </aside>
 
-      <section class="hub">
-        <ul class="hub-grid">
-          <li>
-            <a href="/thoughts/" class="hub-card">
-              <div class="hub-card-title">Thoughts</div>
-              <p class="hub-card-desc">Essays and reflections on building, design, and the long game.</p>
-              <span class="hub-card-count">2 notes</span>
-            </a>
-          </li>
-          <li>
-            <a href="/projects/" class="hub-card">
-              <div class="hub-card-title">Projects</div>
-              <p class="hub-card-desc">Things I've built or am building — code, tools, experiments.</p>
-              <span class="hub-card-count">3 notes</span>
-            </a>
-          </li>
-          <li>
-            <a href="/ideas/" class="hub-card">
-              <div class="hub-card-title">Ideas</div>
-              <p class="hub-card-desc">Fragments and seeds. Notes before they become anything.</p>
-              <span class="hub-card-count">3 notes</span>
-            </a>
-          </li>
-          <li>
-            <a href="/photos/" class="hub-card">
-              <div class="hub-card-title">Photos</div>
-              <p class="hub-card-desc">A visual field notebook.</p>
-              <span class="hub-card-count">0 photos</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <!-- Center: note content -->
+    <div class="site-body-center-column">
+      <div class="published-container">
+        <div class="page-header">
+          <a href="/tags/" class="page-header-link">Explore by tag</a>
+          <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
 
-    <footer class="site-footer">
-      <span>By Jorge</span>
-      <span><a href="/about/">About this site</a></span>
-    </footer>
+        <div class="markdown-preview-view">
+          <div class="markdown-preview-sizer">
+            <h1>Home</h1>
+            <p>A garden, not a feed. Notes I'm growing in public — half-formed, evergreen, and occasionally useful.</p>
+            <p>Wander where you like:</p>
+            <ul>
+              <li><a href="/thoughts/" class="internal-link">Thoughts</a> — essays and reflections on building, design, and the long game.</li>
+              <li><a href="/projects/" class="internal-link">Projects</a> — things I've built or am building.</li>
+              <li><a href="/ideas/" class="internal-link">Ideas</a> — fragments and seeds, notes before they become anything.</li>
+              <li><a href="/photos/" class="internal-link">Photos</a> — a visual field notebook.</li>
+            </ul>
+            <p>Or start from <a href="/about/" class="internal-link">About</a>, see what I'm doing <a href="/now/" class="internal-link">Now</a>, or browse by <a href="/tags/" class="internal-link">Tags</a>.</p>
+
+            <div class="backlinks">
+              <div class="published-section-header">Links to this page</div>
+              <ul class="backlink-list">
+                <li><a href="/about/" class="internal-link">About</a></li>
+              </ul>
+            </div>
+
+            <footer class="site-footer">Powered by curiosity, hosted on GitHub Pages.</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right sidebar: graph + outline -->
+    <aside class="site-body-right-column">
+      <div class="published-section-header">Graph view</div>
+      <div class="graph-view-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+          <line x1="100" y1="100" x2="50" y2="50" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="100" y1="100" x2="150" y2="50" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="100" y1="100" x2="60" y2="150" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="100" y1="100" x2="140" y2="150" stroke="var(--text-faint)" stroke-width="1"/>
+          <line x1="50" y1="50" x2="150" y2="50" stroke="var(--text-faint)" stroke-width="0.5"/>
+          <circle cx="100" cy="100" r="6" fill="var(--interactive-accent)"/>
+          <circle cx="50" cy="50" r="4" fill="var(--text-accent)"/>
+          <circle cx="150" cy="50" r="4" fill="var(--text-accent)"/>
+          <circle cx="60" cy="150" r="4" fill="var(--text-accent)"/>
+          <circle cx="140" cy="150" r="4" fill="var(--text-accent)"/>
+        </svg>
+      </div>
+
+      <div class="published-section-header">On this page</div>
+      <div class="outline">
+        <a href="#home" class="tree-item-self"><span class="tree-item-inner">Home</span></a>
+      </div>
+    </aside>
+
   </div>
 </body>
 </html>
