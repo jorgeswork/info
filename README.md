@@ -1,4 +1,4 @@
-# Jorge's Garden
+# Jorge's mind
 
 A digital garden — notes I'm growing in public. Built with [Quartz](https://quartz.jzhao.xyz/), hosted on GitHub Pages.
 
