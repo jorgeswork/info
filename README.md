@@ -1,17 +1,14 @@
-# Quartz v4
+# Jorge's Garden
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A digital garden — notes I'm growing in public. Built with [Quartz](https://quartz.jzhao.xyz/), hosted on GitHub Pages.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## Authoring
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Notes live in `content/` as Markdown. Push to `main` to publish — GitHub Actions builds and deploys automatically.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Local preview (optional)
 
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+```bash
+npm i
+npx quartz build --serve
+```
